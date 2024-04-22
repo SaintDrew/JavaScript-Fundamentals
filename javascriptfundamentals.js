@@ -105,4 +105,12 @@ const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 console.log(result);
 
 
+// ................................................/////
+//-----------------------------------------///
 
+// the ID of the learner for which this data has been collected
+// Using the forEach in a function
+
+LearnerSubmissions.forEach(item => {
+    console.log(`the id of LearnerSubmissions is ${item.learner_id} `)
+})
