@@ -100,17 +100,34 @@ function getLearnerData(course, ag, submissions) {
     return result;
 }
 
-const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+// const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 
-console.log(result);
+// console.log(result);
 
 
 // ................................................/////
 //-----------------------------------------///
 
-// the ID of the learner for which this data has been collected
-// Using the forEach in a function
+// 1. Write out a function that takes in an array
+// 2. Create vaiable to hold average
+// 3. Loop through the array
+// 4. Add empty
+// 5. Divide by the length
+// 6. Return variable
 
-LearnerSubmissions.forEach(item => {
-    console.log(`the id of LearnerSubmissions is ${item.learner_id} `)
-})
+// let score1= [ 47, 150, 400] // [597]
+
+// let scores2= [ 39, 140] // [179]
+
+function findAverage(array){
+    let average = 0; 
+    for (let i =0; i < array.length; i++){
+        let currentNum = array[i]
+        average += currentNum;
+    }
+    return average;
+}
+findAverage([597])
+
+
+    
